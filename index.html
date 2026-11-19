@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portal estático de treinamento corporativo do Projeto Tododia.">
+    <meta name="color-scheme" content="light">
+    <title>Projeto Tododia · Portal de treinamento</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Pular para o conteúdo principal</a>
+
+    <div class="site-shell">
+      <aside class="sidebar" id="site-sidebar" aria-label="Navegação principal">
+        <div class="sidebar-inner">
+          <div class="brand-lockup">
+            <a class="brand-link" href="#/inicio" data-route aria-label="Projeto Tododia, ir para o início">
+              <img src="./media/imagens/marca.webp" width="184" height="64" alt="Projeto Tododia">
+            </a>
+            <p class="brand-caption">Portal de treinamento</p>
+          </div>
+
+          <nav class="primary-nav" aria-label="Seções do portal">
+            <a href="#/inicio" data-route data-nav-route="inicio"><span class="nav-index">01</span><span>Início</span></a>
+            <a href="#/projeto" data-route data-nav-route="projeto"><span class="nav-index">02</span><span>O projeto</span></a>
+            <a href="#/trilhas" data-route data-nav-route="trilhas"><span class="nav-index">03</span><span>Trilhas</span></a>
+            <a href="#/consulta" data-route data-nav-route="consulta"><span class="nav-index">04</span><span>Consulta rápida</span></a>
+            <a href="#/revisao" data-route data-nav-route="revisao"><span class="nav-index">05</span><span>Revisão</span></a>
+            <a href="#/biblioteca" data-route data-nav-route="biblioteca"><span class="nav-index">06</span><span>Biblioteca</span></a>
+          </nav>
+
+          <div class="sidebar-note">
+            <span class="status-dot" aria-hidden="true"></span>
+            <p>Conteúdo local<br><strong>Projeto Tododia</strong></p>
+          </div>
+        </div>
+      </aside>
+
+      <div class="page-frame">
+        <header class="topbar">
+          <button class="menu-toggle" id="nav-toggle" type="button" aria-controls="site-sidebar" aria-expanded="false">
+            <span class="menu-toggle-icon" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span>Menu</span>
+          </button>
+          <a class="mobile-brand" href="#/inicio" data-route>Projeto Tododia</a>
+          <span class="topbar-context">Manual de campo <span aria-hidden="true">/</span> treinamento corporativo</span>
+        </header>
+
+        <main id="main-content" tabindex="-1">
+          <div id="app" aria-live="polite" aria-busy="true">
+            <section class="loading-state" aria-label="Carregando conteúdo">
+              <p class="eyebrow">Projeto Tododia</p>
+              <h1>Carregando conteúdo local…</h1>
+              <p>O portal está abrindo os materiais da equipe.</p>
+            </section>
+          </div>
+        </main>
+
+        <footer class="site-footer">
+          <p>Projeto Tododia <span aria-hidden="true">·</span> interface estática para implantação em VM da equipe</p>
+          <a href="#/biblioteca" data-route>Ver versões e fontes</a>
+        </footer>
+      </div>
+    </div>
+
+    <noscript>
+      <div class="noscript-message">
+        <h1>JavaScript é necessário para este portal</h1>
+        <p>Ative o JavaScript no navegador para consultar as trilhas, os materiais e a revisão do Projeto Tododia.</p>
+      </div>
+    </noscript>
+
+    <script type="module" src="./assets/js/app.js"></script>
+  </body>
+</html>
