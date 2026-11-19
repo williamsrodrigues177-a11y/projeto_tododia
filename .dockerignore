@@ -1,0 +1,15 @@
+.git
+node_modules
+.env
+.env.*
+deploy/auth
+**/*.htpasswd
+entregas
+scripts
+tests
+docs
+README.md
+PLAN.md
+TODO.md
+*.log
+.DS_Store

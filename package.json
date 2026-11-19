@@ -1,0 +1,17 @@
+{
+  "name": "projeto-tododia-treinamento",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Portal estático de treinamento do Projeto Tododia para implantação na VM da equipe.",
+  "scripts": {
+    "check": "node scripts/verify.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "build": "npm run check && node --test tests/navigation.test.mjs",
+    "preview": "node scripts/preview.mjs",
+    "package": "python3 scripts/package.py"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

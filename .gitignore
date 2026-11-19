@@ -1,0 +1,8 @@
+node_modules/
+.env
+.env.*
+deploy/auth/*
+!deploy/auth/.gitkeep
+*.log
+entregas/
+.DS_Store
