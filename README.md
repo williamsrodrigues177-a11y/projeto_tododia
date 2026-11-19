@@ -48,7 +48,7 @@ Com Docker Desktop instalado e iniciado, crie `deploy/auth/tododia.htpasswd` con
 
 ## Publicação no Netlify
 
-O arquivo `netlify.toml` configura o build na raiz do repositório (`npm run build`) e publica a pasta `site/`, onde está o `index.html`. No painel do Netlify, mantenha o **Base directory** vazio (raiz do repositório); não mova o `index.html` nem configure `site/` como base, pois os scripts de verificação estão fora dela. As rotas usam hash e não precisam de redirects de SPA.
+O arquivo `netlify.toml` mantém a raiz do repositório como base, não exige etapa de compilação (o site já está pronto em HTML/CSS/JS) e publica a pasta `site/`, onde está o `index.html`. No painel do Netlify, mantenha o **Base directory** vazio (raiz do repositório); não mova o `index.html` nem configure `site/` como base. As rotas usam hash e não precisam de redirects de SPA.
 
 Como em qualquer hospedagem estática, os arquivos publicados ficam acessíveis a quem tiver o endereço. Confirme que todo o conteúdo de `site/` pode ser divulgado ou habilite uma proteção de acesso apropriada antes de compartilhar o site.
 
